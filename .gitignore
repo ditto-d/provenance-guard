@@ -1,13 +1,48 @@
+# Virtual environments
 .venv/
+venv/
+env/
+ENV/
+
+# Environment variables
 .env
+.env.*
 
+# Python
 __pycache__/
+*.py[cod]
 *.pyc
+*.pyo
 
+# IDEs
 .idea/
 .vscode/
 
-logs/*.json
-!logs/audit_log.json
+# macOS
+.DS_Store
 
+# Logs
+*.log
+logs/*.json
+!logs/.gitkeep
+
+# Databases
 *.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Type checkers
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Build
+dist/
+build/
+*.egg-info/
